@@ -1,15 +1,14 @@
-
 function getWeatherIconPath(code) {
-  if (code === 0) return "/weather-app-main/weather-app-main/assets/images/icon-sunny.webp";          // صافي
-  if (code === 1) return "/weather-app-main/weather-app-main/assets/images/icon-partly-cloudy.webp";  // جزئي سحاب
-  if (code === 2) return "/weather-app-main/weather-app-main/assets/images/icon-overcast.webp";         // غائم
-  if (code === 3) return "/weather-app-main/weather-app-main/assets/images/icon-overcast.webp";       // غائم كثيف
-  if ([45, 48].includes(code)) return "/weather-app-main/weather-app-main/assets/images/icon-fog.webp";       // ضباب
-  if ([51, 53, 55].includes(code)) return "/weather-app-main/weather-app-main/assets/images/icon-drizzle.webp"; // رذاذ
-  if ([61, 63, 65].includes(code)) return "/weather-app-main/weather-app-main/assets/images/icon-rain.webp";    // مطر
-  if ([71, 73, 75].includes(code)) return "/weather-app-main/weather-app-main/assets/images/icon-snow.webp";    // ثلج
-  if ([80, 81, 82].includes(code)) return "/weather-app-main/weather-app-main/assets/images/icon-rain.webp"; // أمطار متقطعة
-  if ([95, 96, 99].includes(code)) return "/weather-app-main/weather-app-main/assets/images/icon-storm.webp"; // عواصف رعدية
+  if (code === 0) return "./weather-app-main/weather-app-main/assets/images/icon-sunny.webp";          // صافي
+  if (code === 1) return "./weather-app-main/weather-app-main/assets/images/icon-partly-cloudy.webp";  // جزئي سحاب
+  if (code === 2) return "./weather-app-main/weather-app-main/assets/images/icon-overcast.webp";         // غائم
+  if (code === 3) return "./weather-app-main/weather-app-main/assets/images/icon-overcast.webp";       // غائم كثيف
+  if ([45, 48].includes(code)) return "./weather-app-main/weather-app-main/assets/images/icon-fog.webp";       // ضباب
+  if ([51, 53, 55].includes(code)) return "./weather-app-main/weather-app-main/assets/images/icon-drizzle.webp"; // رذاذ
+  if ([61, 63, 65].includes(code)) return "./weather-app-main/weather-app-main/assets/images/icon-rain.webp";    // مطر
+  if ([71, 73, 75].includes(code)) return "./weather-app-main/weather-app-main/assets/images/icon-snow.webp";    // ثلج
+  if ([80, 81, 82].includes(code)) return "./weather-app-main/weather-app-main/assets/images/icon-rain.webp"; // أمطار متقطعة
+  if ([95, 96, 99].includes(code)) return "./weather-app-main/weather-app-main/assets/images/icon-storm.webp"; // عواصف رعدية
   return "https://imgs.search.brave.com/P2MCJnNG2GXh8rFXwc-D-6uSSM81Lm2wbme097sJFQs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL3ByZW1p/dW0vcG5nLTI1Ni10/aHVtYi91bmtub3du/LXdlYXRoZXItNDEy/NzMzNS0zNDI1NjM5/LnBuZz9mPXdlYnAm/dz0xMjg"; // حالة غير معروفة
 }
 
@@ -112,7 +111,6 @@ function createhourlyCard(hourly, index) {
   `
   return card;
 }
-
 
 async function SelectCityName(lat, lon) {
   try {
