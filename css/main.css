@@ -1,0 +1,178 @@
+body {
+  background-color: #02012B !important;
+  text-transform: capitalize;
+  color: white !important;
+}
+
+.bi-gear {
+  display: inline-block;
+  font-size: 25px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.bi-gear:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.header {
+  text-align: center;
+  padding: 25px;
+}
+
+.header .text p {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-top: 20px;
+}
+
+.input div:first-child {
+  width: 40%;
+  position: relative;
+}
+
+.input div:first-child input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #25253F;
+  border: none;
+  outline: none;
+  caret-color: white;
+  padding-left: 45px;
+  transition: 0.3s linear;
+  color: white;
+}
+
+.input div:first-child input:focus {
+  box-shadow: 0px 0px 4px 1px white;
+}
+
+.input div:first-child span {
+  position: absolute;
+  margin: 10px;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+
+
+.sp {
+  color: #878797;
+  font-weight: bold;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.sunrise {
+  background-image: url("../weather-app-main/weather-app-main/assets/images/bg-today-large.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  height: 250px;
+}
+
+.days-detail {
+  margin: 30px 0;
+}
+
+.days-detail div {
+  flex-basis: 100px;
+}
+
+.day {
+  width: 150px;
+  height: auto;
+  background-color: #25253F;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.day img {
+  width: 50px;
+}
+
+img {
+  width: 80px;
+}
+
+.content-right {
+  background-color: #25253F;
+  padding: 10px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.content-right .hourly-detail {
+  background-color: #2F2F49 !important;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.detail {
+  background-color: #25253F;
+  padding: 18px;
+  border-radius: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.detail:hover {
+  background-color: #2F2F49;
+  transform: translateY(-4px);
+}
+
+.effect {
+  transition: transform 0.3s ease;
+}
+
+.effect:hover {
+  transform: translateY(-4px);
+  background-color: #2F2F49;
+}
+
+.dateShort {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  background-color: #25253f;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.hourly-detail {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hourly-detail:hover {
+  transform: scale(1.02);
+}
+
+.drop-gear {
+  background-color: transparent !important;
+}
